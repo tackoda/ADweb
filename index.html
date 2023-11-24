@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>ProjectZero</title>
     <script>
         if (!localStorage.getItem('authenticated')) {
-            window.location.href = 'login.html';
+            window.location.href = 'html/login.html';
         }
     </script>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="../images/your_logo.png" alt="Your Logo">
+            <img src="images/your_logo.png" alt="Your Logo">
         </div>
         <div class="options">
-            <a href="positions.html">
-                <img src="../images/option1_image.png" alt="Option 1">
+            <a href="html/positions.html">
+                <img src="images/option1_image.png" alt="Option 1">
                 <span>The Position</span>
             </a>
-            <a href="place.html">
-                <img src="../images/option2_image.png" alt="Option 2">
+            <a href="html/place.html">
+                <img src="images/option2_image.png" alt="Option 2">
                 <span>The Place</span>
             </a>
-            <a href="extra.html">
-                <img src="../images/option3_image.png" alt="Option 3">
+            <a href="html/extra.html">
+                <img src="images/option3_image.png" alt="Option 3">
                 <span>Extra's</span>
             </a>
         </div>
@@ -36,7 +36,7 @@
 <script>
     function logout() {
         localStorage.removeItem('authenticated');
-        window.location.href = 'login.html';
+        window.location.href = 'html/login.html';
     }
 </script>
 </body>
