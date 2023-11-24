@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Place</title>
+  <script>
+    if (!localStorage.getItem('authenticated')) {
+        window.location.href = 'login.html';
+    }
+</script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #title {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 20px;
+      background-color: #33333379;
+      color: #fff;
+    }
+
+    #grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #33333379;
+      padding: 10px;
+      border-radius: 3rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+    }
+
+    .item-text {
+      margin-top: 10px;
+      text-align: center;
+      color: #fff;;
+    }
+  </style>
+</head>
+<body>
+  <div id="title">The Place:</div>
+
+  <div id="grid-container">
+    <div class="grid-item">
+      <img src="../images/places/car-hood.jpg" alt="Image 1">
+      <div class="item-text">On the car hood</div>
+    </div>
+    <div class="grid-item">
+      <img src="../images/places/car.avif" alt="Image 2">
+      <div class="item-text">In a car</div>
+    </div>
+    <div class="grid-item">
+        <img src="../images/places/hot-tub.jpg" alt="Image 2">
+        <div class="item-text">In a jacuzi</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/hotel.png" alt="Image 2">
+        <div class="item-text">In a hotelroom</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/kitchen.jpeg" alt="Image 2">
+        <div class="item-text">In a kitchen</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/living.jpeg" alt="Image 2">
+        <div class="item-text">In a living room</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/night-beach.jpg" alt="Image 2">
+        <div class="item-text">In the night at a beach</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/outside.jpeg" alt="Image 2">
+        <div class="item-text">Somewhere outside</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/pool.jpeg" alt="Image 2">
+        <div class="item-text">In a pool</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/sauna.jpg" alt="Image 2">
+        <div class="item-text">In a sauna</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/sea.jpeg" alt="Image 2">
+        <div class="item-text">In the sea</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/shower.jpeg" alt="Image 2">
+        <div class="item-text">In a shower</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/snow.jpeg" alt="Image 2">
+        <div class="item-text">In the snow</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/stairs.webp" alt="Image 2">
+        <div class="item-text">On the stairs</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/tent.jpg" alt="Image 2">
+        <div class="item-text">In a tent</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/trampoline.webp" alt="Image 2">
+        <div class="item-text">On a trampoline</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/washing-machine.avif" alt="Image 2">
+        <div class="item-text">On a working washing machine</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/waterfall.jpg" alt="Image 2">
+        <div class="item-text">Behind a waterfall</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/places/bad.jpeg" alt="Image 2">
+        <div class="item-text">In a bath</div>
+      </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Difficulty:</title>
+  <script>
+    if (!localStorage.getItem('authenticated')) {
+        window.location.href = 'login.html';
+    }
+</script>
+  <style>
+    body {
+        font-size: 2rem;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    }
+
+    #title {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 20px;
+      background-color: #33333379;
+      color: #fff;
+    }
+
+    #options-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .option {
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+      text-decoration: none;
+      color: #333;
+      border: solid;
+    }
+
+    .option:hover {
+      transform: scale(1.1);
+    }
+
+    .option img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .option-text {
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <div id="title">Choose Your Difficulty</div>
+
+    <div id="options-container">
+      <!-- Option 1 -->
+      <a href="easy.html" class="option">
+        <img src="../images/easy.png" alt="Option 1">
+        <div class="option-text">Easy Positions</div>
+      </a>
+  
+      <!-- Option 2 -->
+      <a href="moderate.html" class="option">
+        <img src="../images/moderate.png" alt="Option 2">
+        <div class="option-text">Moderate Positions</div>
+      </a>
+  
+      <!-- Option 3 -->
+      <a href="advanced.html" class="option">
+        <img src="../images/advanced.png" alt="Option 3">
+        <div class="option-text">Advanced Positions</div>
+      </a>
+    </div>
+</body>
+</html>

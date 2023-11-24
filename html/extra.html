@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Extra's</title>
+  <script>
+    if (!localStorage.getItem('authenticated')) {
+        window.location.href = 'login.html';
+    }
+</script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    #title {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 20px;
+      background-color: #33333379;
+      color: #fff;
+    }
+
+    #grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #33333379;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+    }
+
+    .item-text {
+      margin-top: 10px;
+      text-align: center;
+      color: #fff;;
+    }
+  </style>
+</head>
+<body>
+  <div id="title">The Extra's:</div>
+
+  <div id="grid-container">
+    <div class="grid-item">
+      <img src="../images/extra/blindfold.jpeg" alt="Image 1">
+      <div class="item-text">Blindfolded</div>
+    </div>
+    <div class="grid-item">
+      <img src="../images/extra/cord.jpeg" alt="Image 2">
+      <div class="item-text">Use cords</div>
+    </div>
+    <div class="grid-item">
+        <img src="../images/extra/lingerie.jpeg" alt="Image 2">
+        <div class="item-text">Buy lingerie for eachother</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/extra/paint.jpg" alt="Image 2">
+        <div class="item-text">Use body paint that is eatable</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/extra/role.png" alt="Image 2">
+        <div class="item-text">Do some role-play</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/extra/toys.jpeg" alt="Image 2">
+        <div class="item-text">Buy and use some toys</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/extra/twister.jpg" alt="Image 2">
+        <div class="item-text">Play naked twister</div>
+      </div>
+      <div class="grid-item">
+        <img src="../images/extra/whipped.png" alt="Image 2">
+        <div class="item-text">Be creative with food</div>
+      </div>
+  </div>
+</body>
+</html>
